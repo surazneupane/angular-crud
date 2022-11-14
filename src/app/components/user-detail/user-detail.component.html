@@ -1,0 +1,13 @@
+
+<div *ngIf="user" class="card container" style="margin-top: 20px;">
+  <div class="card-body">
+    <h5 class="card-title">Name : {{user.name}}</h5>
+    <p class="card-text">Email : {{user.email}}</p>
+    <p class="card-text">Address : {{user.address}}</p>
+    <a (click)="goBack()" class="btn btn-warning">Go Back</a>
+    <a href="/users/edit/{{user.id}}"  class="btn btn-primary m-2">Edit</a>
+    <a  (click)="deleteUser(user.id)" class="btn btn-danger m-2">Delete</a>
+
+
+  </div>
+</div>
